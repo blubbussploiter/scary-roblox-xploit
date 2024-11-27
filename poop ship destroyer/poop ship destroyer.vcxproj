@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fbddcf99-2d14-4d7b-b856-0ea6857820d4}</ProjectGuid>
+    <RootNamespace>poopshipdestroyer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;WIN32_LEAN_AND_MEAN;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\include;.\include\lua;.\bytecode;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bytecode\luaSerializer\ckey.cpp" />
+    <ClCompile Include="bytecode\luaSerializer\robloxInstructions.cpp" />
+    <ClCompile Include="bytecode\luaSerializer\serializer.cpp" />
+    <ClCompile Include="bytecode\lz4\lz4.c" />
+    <ClCompile Include="bytecode\lz4\lz4file.c" />
+    <ClCompile Include="bytecode\lz4\lz4frame.c" />
+    <ClCompile Include="bytecode\lz4\lz4hc.c" />
+    <ClCompile Include="exploit\communication.cpp" />
+    <ClCompile Include="exploit\dynamic_addresses.cpp" />
+    <ClCompile Include="exploit\execution.cpp" />
+    <ClCompile Include="exploit\addresses.cpp" />
+    <ClCompile Include="exploit\util\jssocket.cpp" />
+    <ClCompile Include="include\lua\lapi.c" />
+    <ClCompile Include="include\lua\lauxlib.c" />
+    <ClCompile Include="include\lua\lbaselib.c" />
+    <ClCompile Include="include\lua\lcode.c" />
+    <ClCompile Include="include\lua\ldblib.c" />
+    <ClCompile Include="include\lua\ldebug.c" />
+    <ClCompile Include="include\lua\ldo.c" />
+    <ClCompile Include="include\lua\ldump.c" />
+    <ClCompile Include="include\lua\lfunc.c" />
+    <ClCompile Include="include\lua\lgc.c" />
+    <ClCompile Include="include\lua\linit.c" />
+    <ClCompile Include="include\lua\liolib.c" />
+    <ClCompile Include="include\lua\llex.c" />
+    <ClCompile Include="include\lua\lmathlib.c" />
+    <ClCompile Include="include\lua\lmem.c" />
+    <ClCompile Include="include\lua\loadlib.c" />
+    <ClCompile Include="include\lua\lobject.c" />
+    <ClCompile Include="include\lua\lopcodes.c" />
+    <ClCompile Include="include\lua\loslib.c" />
+    <ClCompile Include="include\lua\lparser.c" />
+    <ClCompile Include="include\lua\lstate.c" />
+    <ClCompile Include="include\lua\lstring.c" />
+    <ClCompile Include="include\lua\lstrlib.c" />
+    <ClCompile Include="include\lua\ltable.c" />
+    <ClCompile Include="include\lua\ltablib.c" />
+    <ClCompile Include="include\lua\ltm.c" />
+    <ClCompile Include="include\lua\luac.c" />
+    <ClCompile Include="include\lua\lundump.c" />
+    <ClCompile Include="include\lua\lvm.c" />
+    <ClCompile Include="include\lua\lzio.c" />
+    <ClCompile Include="include\lua\print.c" />
+    <ClCompile Include="include\util\xxhash.c" />
+    <ClCompile Include="output.cpp" />
+    <ClCompile Include="poop.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exploit\addresses.h" />
+    <ClInclude Include="exploit\communication.h" />
+    <ClInclude Include="exploit\coolluaenv.h" />
+    <ClInclude Include="exploit\datamodel.h" />
+    <ClInclude Include="exploit\datamodelFunctions.h" />
+    <ClInclude Include="exploit\datamodelSendStats.h" />
+    <ClInclude Include="exploit\dynamic_addresses.h" />
+    <ClInclude Include="exploit\execution.h" />
+    <ClInclude Include="exploit\util\ida.h" />
+    <ClInclude Include="exploit\util\interwebs.h" />
+    <ClInclude Include="exploit\util\jssocket.h" />
+    <ClInclude Include="exploit\util\memory.h" />
+    <ClInclude Include="exploit\util\retcheck.h" />
+    <ClInclude Include="exploit\util\security\bypasses.h" />
+    <ClInclude Include="exploit\util\sigscan.h" />
+    <ClInclude Include="exploit\util\static_addresses.h" />
+    <ClInclude Include="luaSerializer\ckey.h" />
+    <ClInclude Include="luaSerializer\encoding.h" />
+    <ClInclude Include="luaSerializer\robloxInstructions.h" />
+    <ClInclude Include="luaSerializer\robloxOpcodes.h" />
+    <ClInclude Include="luaSerializer\serializer.h" />
+    <ClInclude Include="output.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

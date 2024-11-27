@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\exploit">
+      <UniqueIdentifier>{f8321b6f-7085-4868-819a-c197d018290e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lua">
+      <UniqueIdentifier>{350cdf87-e101-42fd-9b65-3b4a1efe46f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exploit">
+      <UniqueIdentifier>{23004501-7613-43d3-ba0a-2d95ca22dba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exploit\Datamodel">
+      <UniqueIdentifier>{0ec01abd-bf22-4250-b97d-fbba4e8c4931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exploit\Addresses">
+      <UniqueIdentifier>{20764070-4a3c-4091-9f5e-fce0ddce687a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exploit\LuaSerialization">
+      <UniqueIdentifier>{c2e22c99-8779-4f62-be29-5f98ed68462f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exploit\Bypasses">
+      <UniqueIdentifier>{12403b12-f09d-4076-a664-77294ead7d6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exploit\Memory">
+      <UniqueIdentifier>{f9fe8d26-2b77-4bcb-ab95-10cbc19084e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\exploit\Bytecode">
+      <UniqueIdentifier>{46d1100e-0d20-4064-af42-e9374ee97f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\exploit\Util">
+      <UniqueIdentifier>{6042d947-05d2-47fc-908c-e90ac84cf070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exploit\Execution">
+      <UniqueIdentifier>{d0e8b673-24ff-47c6-b2b3-d1eae9bb2d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exploit\Util">
+      <UniqueIdentifier>{ed5b0601-7652-4588-9c6d-ce334bbd4ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\exploit\Bytecode\util">
+      <UniqueIdentifier>{e43961d0-427a-45a1-8269-d147282a5c8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="poop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="output.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\execution.cpp">
+      <Filter>Source Files\exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\addresses.cpp">
+      <Filter>Source Files\exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\util\jssocket.cpp">
+      <Filter>Source Files\exploit\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\dynamic_addresses.cpp">
+      <Filter>Source Files\exploit\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\communication.cpp">
+      <Filter>Source Files\exploit\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="bytecode\luaSerializer\ckey.cpp">
+      <Filter>Source Files\exploit\Bytecode</Filter>
+    </ClCompile>
+    <ClCompile Include="bytecode\luaSerializer\robloxInstructions.cpp">
+      <Filter>Source Files\exploit\Bytecode</Filter>
+    </ClCompile>
+    <ClCompile Include="bytecode\luaSerializer\serializer.cpp">
+      <Filter>Source Files\exploit\Bytecode</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\ldo.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lparser.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lvm.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lgc.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lcode.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lstrlib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\liolib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\llex.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\loadlib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\ldblib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lapi.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\ldebug.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lundump.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\ltablib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lbaselib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lauxlib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\loslib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lstate.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\ltable.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lfunc.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\ldump.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\linit.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lmathlib.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lmem.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lobject.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lopcodes.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lstring.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\ltm.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\lzio.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\print.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lua\luac.c">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="bytecode\lz4\lz4.c">
+      <Filter>Source Files\exploit\Bytecode\util</Filter>
+    </ClCompile>
+    <ClCompile Include="bytecode\lz4\lz4file.c">
+      <Filter>Source Files\exploit\Bytecode\util</Filter>
+    </ClCompile>
+    <ClCompile Include="bytecode\lz4\lz4frame.c">
+      <Filter>Source Files\exploit\Bytecode\util</Filter>
+    </ClCompile>
+    <ClCompile Include="bytecode\lz4\lz4hc.c">
+      <Filter>Source Files\exploit\Bytecode\util</Filter>
+    </ClCompile>
+    <ClCompile Include="include\util\xxhash.c">
+      <Filter>Source Files\exploit\Bytecode\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\datamodel.h">
+      <Filter>Header Files\Exploit\Datamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\datamodelFunctions.h">
+      <Filter>Header Files\Exploit\Datamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\datamodelSendStats.h">
+      <Filter>Header Files\Exploit\Datamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\dynamic_addresses.h">
+      <Filter>Header Files\Exploit\Addresses</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\addresses.h">
+      <Filter>Header Files\Exploit\Addresses</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\util\static_addresses.h">
+      <Filter>Header Files\Exploit\Addresses</Filter>
+    </ClInclude>
+    <ClInclude Include="luaSerializer\ckey.h">
+      <Filter>Header Files\Exploit\LuaSerialization</Filter>
+    </ClInclude>
+    <ClInclude Include="luaSerializer\encoding.h">
+      <Filter>Header Files\Exploit\LuaSerialization</Filter>
+    </ClInclude>
+    <ClInclude Include="luaSerializer\robloxInstructions.h">
+      <Filter>Header Files\Exploit\LuaSerialization</Filter>
+    </ClInclude>
+    <ClInclude Include="luaSerializer\robloxOpcodes.h">
+      <Filter>Header Files\Exploit\LuaSerialization</Filter>
+    </ClInclude>
+    <ClInclude Include="luaSerializer\serializer.h">
+      <Filter>Header Files\Exploit\LuaSerialization</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\util\security\bypasses.h">
+      <Filter>Header Files\Exploit\Bypasses</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\util\retcheck.h">
+      <Filter>Header Files\Exploit\Bypasses</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\util\ida.h">
+      <Filter>Header Files\Exploit\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\util\sigscan.h">
+      <Filter>Header Files\Exploit\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\util\memory.h">
+      <Filter>Header Files\Exploit\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\communication.h">
+      <Filter>Header Files\Exploit\Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\execution.h">
+      <Filter>Header Files\Exploit\Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\util\jssocket.h">
+      <Filter>Header Files\Exploit\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\util\interwebs.h">
+      <Filter>Header Files\Exploit\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\coolluaenv.h">
+      <Filter>Header Files\Exploit</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
